@@ -1,8 +1,8 @@
 console.log('hello');
 
 /* we need this only on touch devices */
-if (Modernizr.touch) {
-    console.log('touch');
+if (Modernizr.touchEvents) {
+    alert('touch screen');
     /* cache dom references */ 
     // var $body = jQuery('body'); 
 
