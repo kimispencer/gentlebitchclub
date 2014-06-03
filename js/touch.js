@@ -1,3 +1,5 @@
+console.log('hello');
+
 /* we need this only on touch devices */
 if (Modernizr.touch) {
     console.log('touch');
