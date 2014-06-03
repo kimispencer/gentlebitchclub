@@ -1,6 +1,9 @@
 <html>
 	<head>
 		<meta name="viewport" content="width=device-width, user-scalable=no">
+		<title>Gentle Bitch Club</title>
+		<link rel="shortcut icon" type="image/png" href="images/favicon/teardrop.ico"/>
+		<!-- <link rel="shortcut icon" type="image/png" href="images/favicon/g.ico"/> -->
 		<link rel="stylesheet/less" type="text/css" href="less/styles.less" />
 		<script src="js/less.js" type="text/javascript"></script>
 		<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
