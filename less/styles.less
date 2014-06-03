@@ -1,0 +1,140 @@
+@import "reset.less";
+@import "variables.less";
+@import "mixins.less";
+@import "fonts.less";
+@import "forms.less";
+
+.page-wrapper {
+	width: 100%;
+	height: calc(~'100% - 135px'); /* footer height */
+}
+
+.main-content {
+	width: 80%;
+	margin: 0 10%;
+	height: 100%;
+	.flexbox();
+	.flex-flow(column);
+}
+
+.text-logo {
+	font-family: 'CloisterBlack';
+	font-weight: 100;
+	color: white;
+	text-align: center;
+	font-size: 3.5em;
+
+	@media @tablet_small {
+		font-size: 5em;
+	}
+}
+
+.full-screen {
+	/* Set rules to fill background */
+	min-height: 100%;
+	min-width: 1024px;
+
+	/* Set up proportionate scaling */
+	width: 100%;
+	height: auto;
+
+	/* Set up positioning */
+	position: fixed;
+	top: 0;
+	z-index: -1;
+	left: 40%;
+	margin-left: -512px;
+
+	@media @tablet_small {
+		left: 0;
+		margin-left: 0;
+	}
+}
+
+.intro {
+	.flexbox();
+	.flex-flow(column);
+}
+
+.headliner {
+	font-family: 'CloisterBlack';
+	font-size: 18pt;
+	font-weight: 100;
+	color: white;
+}
+
+form#SignupForm {
+	.flexbox();
+	.flex-flow(column);
+	font-size: 12pt;
+	padding: 20px 0;
+	width: 280px;
+}
+
+#SubmitBtn {
+}
+
+.confirmation {
+	font-family: 'CloisterBlack';
+	.transition(all 500ms ease);
+	&.ng-hide {
+		/*border: 1px dashed red;*/
+	}
+}
+
+.confirmation-msg {
+	font-family: 'CloisterBlack';
+	font-weight: 100;
+	color: white;
+	text-align: center;
+	font-size: 1.5em;
+
+	@media @tablet_small {
+		font-size: 5em;
+	}
+}
+
+footer {
+	.flexbox();
+	.flex-flow(column);
+	position: fixed;
+	bottom: 0;
+	color: white;
+	width: 100%;
+	padding-bottom: 20px;
+	section {
+		margin-top: 20px;
+	}
+}
+
+#SocialMedia {
+	.flexbox();
+	.flex-flow(row);
+}
+
+.social-icon {
+	font-size: 30pt;
+	cursor: pointer;
+	margin: 0 10px;
+	color: @white;
+/*	&:hover .no-touch{
+		color: darken(@grey_dark, 5%)
+	}*/
+	&:active {
+		.clickable();
+		color: darken(@grey_dark, 10%)
+	}
+}
+
+#Copyright {
+	font-family: 'Arial';
+	font-size: 10pt;
+	cursor: default;
+	/*color: @grey_dark;*/
+	a {
+		color: @white;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}

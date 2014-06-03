@@ -1,0 +1,45 @@
+input {
+	height: 44px;
+	width: 100%;
+	border: none;
+	padding: 0 10px;
+	margin-bottom: 10px;
+	.border-radius(0);
+	&:active {
+		outline: none;
+	}
+	&:focus {
+		outline: none;
+	}
+	&:invalid {
+		/*background-color: red;*/
+	}
+}
+
+input[type='button'], input[type='submit'] {
+	cursor: pointer;
+	height: 44px;
+	width: 100%;
+	background-color: @grey_light;
+	color: @grey_dark;
+	&:enabled {
+		border-bottom: 2px solid @grey_dark;
+	}
+	&:hover:enabled {
+		background-color: @grey_dark;
+		color: white;
+		border-bottom: 2px solid darken(@grey_dark, 20%);
+	}
+	&:active:enabled {
+		.clickable();
+		outline: none;
+		background-color: darken(@grey_dark, 20%);
+	}
+	&:focus:enabled {
+		outline: none;
+	}
+	&:disabled {
+		cursor: default;
+		color: darken(@grey_light, 10%);
+	}
+}
