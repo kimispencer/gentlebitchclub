@@ -2,16 +2,18 @@ var supportsTouch = 'ontouchstart' in window || navigator.msMaxTouchPoints;
 // console.log(supportsTouch)
 
 if (supportsTouch) {
-    console.log('yo')
     /* cache dom references */ 
     var $body = jQuery('body'); 
+    console.log($body)
 
     /* bind events */
     $(document)
     .on('focus', 'input', function(e) {
         $body.addClass('fixfixed');
+        console.log('fix')
     })
     .on('blur', 'input', function(e) {
         $body.removeClass('fixfixed');
+        console.log('fix2')
     });
 } 
