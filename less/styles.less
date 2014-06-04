@@ -75,10 +75,20 @@ form#SignupForm {
 }
 
 .confirmation {
+	width: 320px;
 	font-family: 'CloisterBlack';
 	.transition(all 500ms ease);
 	&.ng-hide {
 		/*border: 1px dashed red;*/
+	}
+
+	p {
+		font-size: 1.5em;
+	}
+	a {
+		&:hover {
+			text-decoration: underline;
+		}
 	}
 }
 
