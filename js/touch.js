@@ -3,7 +3,7 @@ var supportsTouch = 'ontouchstart' in window || navigator.msMaxTouchPoints;
 
 if (supportsTouch) {
     /* cache dom references */ 
-    var $body = document.body; 
+    var $body = $(document.body); 
     console.log($body)
 
     /* bind events */
