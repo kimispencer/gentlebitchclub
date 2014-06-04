@@ -3,17 +3,17 @@ var supportsTouch = 'ontouchstart' in window || navigator.msMaxTouchPoints;
 
 if (supportsTouch) {
     /* cache dom references */ 
-    var $body = document.body; 
-    console.log($body)
+    var body = document.body; 
+    console.log(body)
 
     /* bind events */
-    $(document)
+    document
     .on('focus', 'input', function(e) {
-        $body.addClass('fixfixed');
+        body.addClass('fixfixed');
         console.log('fix')
     })
     .on('blur', 'input', function(e) {
-        $body.removeClass('fixfixed');
+        body.removeClass('fixfixed');
         console.log('fix2')
     });
 } 
