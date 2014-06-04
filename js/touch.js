@@ -1,9 +1,9 @@
 var supportsTouch = 'ontouchstart' in window || navigator.msMaxTouchPoints;
 // console.log(supportsTouch)
 
-if (supportsTouch) {
+// if (supportsTouch) {
     /* cache dom references */ 
-    var $body = $(document.body); 
+    var $body = $('body'); 
     console.log($body)
 
     /* bind events */
@@ -16,4 +16,4 @@ if (supportsTouch) {
         $body.removeClass('fixfixed');
         console.log('fix2')
     });
-} 
+// } 
