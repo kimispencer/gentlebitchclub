@@ -10,13 +10,13 @@
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<script src="js/app.js"></script>
 		<!-- <script src="js/modernizr.custom.js" type="text/javascript"></script> -->
-		<script src="js/touch.js"></script>
+		<!-- <script src="js/touch.js"></script> -->
 	</head>
 	<body ng-app="app">
 		<section class="page-wrapper" id="ComingSoon" ng-controller="MainCtrl">		
 			<!-- fullscreen bg -->
 			<!-- <img class="full-screen" src="images/one.png" /> -->
-			<img class="full-screen" src="images/two.jpg" />
+			<img class="full-screen" src="images/two.jpg" ng-class="{'fixed': formSubmitted}"/>
 
 			<!-- main -->
 			<section class="main-content">
