@@ -31,8 +31,8 @@
 			    </form>
 	
 				<section ng-controller="FormCtrl" >
-					<form ng-show="!formSubmitted" id="SignupForm" name="SignupForm" ng-submit="processForm()" action="" method="POST">
-						<input type="email" name="email" placeholder="Enter your email address" ng-model="signup.email" required on-blur />
+					<form ng-show="!formSubmitted" id="SignupForm" name="SignupForm" ng-submit="processForm()">
+						<input type="email" name="email" placeholder="Enter your email address" ng-model="data.email" required on-blur />
 						<input id="SubmitBtn" type="submit" value="Sup" ng-disabled="SignupForm.$invalid" />
 					</form>
 					<section class="confirmation" ng-show="formSubmitted">

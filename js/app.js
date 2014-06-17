@@ -16,11 +16,11 @@ app.controller('FormCtrl', function($scope, $rootScope, $http) {
 		$http({
 			method: 'POST',
 			url: 'process.php',
-			// data: $.param($scope.formData), // pass in data as strings
+			data: $scope.data,
 	        headers : { 'Content-Type': 'application/x-www-form-urlencoded' }  // set the headers so angular passing info as form data (not request payload)
 		})
 			.success(function(data) {
-				// console.log($scope.signup.email);
+				console.log(data);
 				$rootScope.formSubmitted = true;
 			})
 			.error(function(data) {
