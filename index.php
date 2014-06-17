@@ -24,6 +24,14 @@
 					<h1 class="text-logo">Gentle Bitch Club</h1>
 					<p class="headliner">Coming soon...</p>
 				</section>
+
+				  <form action="foobar_submit.php" method="post">
+				    <input name="my_html_input_tag"  value="PILLS HERE"/>
+
+				    <input type="submit" name="my_form_submit_button" 
+				           value="Click here for penguins"/>
+
+			    </form>
 	
 				<section ng-controller="FormCtrl" >
 					<form ng-show="!formSubmitted" id="SignupForm" name="SignupForm" ng-submit="processForm()" action="" method="POST">
@@ -32,7 +40,7 @@
 						<input id="SubmitBtn" type="submit" value="Sup" ng-disabled="SignupForm.$invalid" />
 					</form>
 					<section class="confirmation" ng-show="formSubmitted">
-						<p>Thanks, well let you know when more shit is to come xx.</p>
+						<p>Thanks, well let you know when more shit is to come.</p>
 						<p>Otherwise stay in touch, <a href="mailto:info.gbcbrooklyn@gmail.com">info.gbcbrooklyn@gmail.com</a></p>
 					</section>
 				</section>

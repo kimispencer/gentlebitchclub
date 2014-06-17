@@ -1,8 +1,5 @@
 <?php
-	$recipient = "kimispencer@gmail.com";
-	$sender = $recipient;
-	$subject = "Subscribe";
-	$body = "Email: " . $_POST['email'] . " \n";
-
-	mail( $recipient, $subject, $body, "From: $sender" ) or die ("Mail could not be sent.");
+  echo $_POST['my_html_input_tag'];
+  echo "<br><br>";
+  print_r($_POST); 
 ?>
