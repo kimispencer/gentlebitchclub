@@ -32,7 +32,7 @@
 						<input id="SubmitBtn" type="submit" value="Sup" ng-disabled="SignupForm.$invalid" />
 					</form>
 					<section class="confirmation" ng-show="formSubmitted">
-						<p>Thanks, well let you know when more shit is to come.</p>
+						<p>Thanks, well let you know when more shit is to come xx.</p>
 						<p>Otherwise stay in touch, <a href="mailto:info.gbcbrooklyn@gmail.com">info.gbcbrooklyn@gmail.com</a></p>
 					</section>
 				</section>
