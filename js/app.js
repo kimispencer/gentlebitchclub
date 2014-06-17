@@ -20,7 +20,7 @@ app.controller('FormCtrl', function($scope, $rootScope, $http) {
 	        headers : { 'Content-Type': 'application/x-www-form-urlencoded' }  // set the headers so angular passing info as form data (not request payload)
 		})
 			.success(function(data) {
-				console.log($scope.signup);
+				// console.log($scope.signup.email);
 				$rootScope.formSubmitted = true;
 			})
 			.error(function(data) {
@@ -32,6 +32,17 @@ app.controller('FormCtrl', function($scope, $rootScope, $http) {
 /*
 	directives
 */
+
+app.directive('onBlur', [function(){
+	return {
+		restrict: 'A',
+		link: function(scope, elem, attrs) {
+			elem.on('blur', function() {
+				// console.log('blur')
+			});
+		}
+	}
+}]);
 
 // var blur = function () {
 //     return {
@@ -75,7 +86,3 @@ app.controller('FormCtrl', function($scope, $rootScope, $http) {
 
 // app.directive('input', blur);
 // app.directive('select', blur);
-
-
-
-

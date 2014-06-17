@@ -27,14 +27,13 @@
 	
 				<section ng-controller="FormCtrl" >
 					<form ng-show="!formSubmitted" id="SignupForm" name="SignupForm" ng-submit="processForm()" action="" method="POST">
-						<input type="email" name="email" placeholder="Enter your email address" ng-model="signup.email" required />
+						<input type="email" name="email" placeholder="Enter your email address" ng-model="signup.email" required on-blur />
 						<!-- <p ng-show="SignupForm.email.$error.email">invalid</p> -->
 						<input id="SubmitBtn" type="submit" value="Sup" ng-disabled="SignupForm.$invalid" />
 					</form>
 					<section class="confirmation" ng-show="formSubmitted">
 						<p>Thanks, well let you know when more shit is to come.</p>
-						<p>Otherwise stay in touch, <a>info@gentlebitchclub.com</a></p>
-						<!-- <h1 class="confirmation-msg">{{ signup.email }}</h1> -->
+						<p>Otherwise stay in touch, <a href="mailto:info.gbcbrooklyn@gmail.com">info.gbcbrooklyn@gmail.com</a></p>
 					</section>
 				</section>
 			</section>

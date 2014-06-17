@@ -1,5 +1,5 @@
 <?php
-	$recipient = ""; //kimispencer@gmail.com";
+	$recipient = "kimispencer@gmail.com";
 	$sender = $recipient;
 	$subject = "Subscribe";
 	$body .= "Email: ".$_POST['email']." \n";
