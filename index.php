@@ -25,17 +25,14 @@
 					<p class="headliner">Coming soon...</p>
 				</section>
 
-				  <form action="process.php" method="post">
-				    <input name="my_html_input_tag"  value="PILLS HERE"/>
-
-				    <input type="submit" name="my_form_submit_button" 
-				           value="Click here for penguins"/>
+			    <form action="process.php" method="POST">
+				    <input name="email"  value="..."/>
+				    <input type="submit" />
 			    </form>
 	
 				<section ng-controller="FormCtrl" >
 					<form ng-show="!formSubmitted" id="SignupForm" name="SignupForm" ng-submit="processForm()" action="" method="POST">
 						<input type="email" name="email" placeholder="Enter your email address" ng-model="signup.email" required on-blur />
-						<!-- <p ng-show="SignupForm.email.$error.email">invalid</p> -->
 						<input id="SubmitBtn" type="submit" value="Sup" ng-disabled="SignupForm.$invalid" />
 					</form>
 					<section class="confirmation" ng-show="formSubmitted">
