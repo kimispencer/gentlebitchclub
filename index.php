@@ -25,12 +25,11 @@
 					<p class="headliner">Coming soon...</p>
 				</section>
 
-				  <form action="foobar_submit.php" method="post">
+				  <form action="process.php" method="post">
 				    <input name="my_html_input_tag"  value="PILLS HERE"/>
 
 				    <input type="submit" name="my_form_submit_button" 
 				           value="Click here for penguins"/>
-
 			    </form>
 	
 				<section ng-controller="FormCtrl" >
