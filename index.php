@@ -24,11 +24,6 @@
 					<h1 class="text-logo">Gentle Bitch Club</h1>
 					<p class="headliner">Coming soon...</p>
 				</section>
-
-			    <!-- <form action="process.php" method="POST">
-				    <input name="email"  value="..."/>
-				    <input type="submit" />
-			    </form> -->
 	
 				<section ng-controller="FormCtrl" >
 					<form ng-show="!formSubmitted" id="SignupForm" name="SignupForm" ng-submit="processForm()">
@@ -36,8 +31,7 @@
 						<input id="SubmitBtn" type="submit" value="Sup" ng-disabled="SignupForm.$invalid" />
 					</form>
 					<section class="confirmation" ng-show="formSubmitted">
-						<p>Thanks, well let you know when more shit is to come.</p>
-						<p>Otherwise stay in touch, <a href="mailto:info.gbcbrooklyn@gmail.com">info.gbcbrooklyn@gmail.com</a></p>
+						<p><a href="mailto:info.gbcbrooklyn@gmail.com">info.gbcbrooklyn@gmail.com</a></p>
 					</section>
 				</section>
 			</section>
