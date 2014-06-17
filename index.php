@@ -25,10 +25,10 @@
 					<p class="headliner">Coming soon...</p>
 				</section>
 
-			    <form action="process.php" method="POST">
+			    <!-- <form action="process.php" method="POST">
 				    <input name="email"  value="..."/>
 				    <input type="submit" />
-			    </form>
+			    </form> -->
 	
 				<section ng-controller="FormCtrl" >
 					<form ng-show="!formSubmitted" id="SignupForm" name="SignupForm" ng-submit="processForm()">
