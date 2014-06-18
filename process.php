@@ -2,12 +2,19 @@
 	$postdata = file_get_contents("php://input");
 	$data = json_decode($postdata, true);
 
-	$recipient = "info.gbcbrooklyn@gmail.com";
-	$sender = $recipient;
-	$subject = "Subscribe";
+	$gentlebitchclub = "info.gbcbrooklyn@gmail.com";
 	$email = $data['email'];
 
-	mail( $recipient, $subject, $email, "From: $sender" ) or die ("Mail could not be sent.");
+	$subject_subscribe = "Subscribe";
+	$subject_confirmation = "Thanks for signing up!";
+
+	$body_confirmation = "We'll keep you up to as we launch our latest products.";
+
+
+	// send subscribe email to gentlebitchclub
+	mail( $gentlebitchclub, $subject_subscribe, $email, "From: $email" ) or die ("Mail could not be sent.");
+	// send confirmation email to user
+	mail( $email, $subject_confirmation, $body_confirmation, "From: $gentlebitchclub" );
 ?>
 
 
