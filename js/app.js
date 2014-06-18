@@ -33,16 +33,16 @@ app.controller('FormCtrl', function($scope, $rootScope, $http) {
 	directives
 */
 
-app.directive('onBlur', [function(){
-	return {
-		restrict: 'A',
-		link: function(scope, elem, attrs) {
-			elem.on('blur', function() {
-				// console.log('blur')
-			});
-		}
-	}
-}]);
+// app.directive('onBlur', [function(){
+// 	return {
+// 		restrict: 'A',
+// 		link: function(scope, elem, attrs) {
+// 			elem.on('blur', function() {
+// 				console.log('blur')
+// 			});
+// 		}
+// 	}
+// }]);
 
 // var blur = function () {
 //     return {

@@ -9,6 +9,9 @@
 	$subject_confirmation = "Thanks for signing up!";
 
 	$body_confirmation = "We'll keep you up to as we launch our latest products.";
+	// $message = '<html><body>';
+	// $message .= '<h1>Hello, World!</h1>';
+	// $message .= '</body></html>';
 
 
 	// send subscribe email to gentlebitchclub
@@ -16,5 +19,3 @@
 	// send confirmation email to user
 	mail( $email, $subject_confirmation, $body_confirmation, "From: $gentlebitchclub" );
 ?>
-
-
